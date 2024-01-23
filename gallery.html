@@ -1,666 +1,491 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Yomi Gallery</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <!-- Custom CSS -->
-    <link href="styles/styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md">
-      <div class="container-fluid">
-        <a class="navbar-brand text-center" href="#">Yomicos</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+
+<head>
+  <title>Yomi Gallery</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />-->
+  <!-- Custom CSS -->
+  <link href="styles/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+      <a class="navbar-brand text-center" href="#">Yomicos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar content -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="socialmedia.html">Social Media</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row mt-5 text-center">
+      <h2>요미냥 코스프레 갤러리</h2>
+    </div>
+    <div class="row row-cols-md-3 fadeIn" id="gallery">
+      <div class="col-sm-12 my-3 mb-1 mb-md-0">
+        <button type="button" class="gal-img-btn rounded-5" data-bs-toggle="modal" data-bs-target="#modal1">
+          <img src="https://pbs.twimg.com/media/FWEFOhuaUAArEnY?format=jpg&name=large"
+            class="img-fluid img-resize rounded-5" id="basic-img" alt="Image 1" data-toggle="modal"
+            data-target="#modal1" />
+          <div class="hover-box rounded-5">
+            <h3>샤이 릴리(Shylily)</h3>
+          </div>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Navbar content -->
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="about.html"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="gallery.html"
-                >Gallery</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="socialmedia.html"
-                >Social Media</a
-              >
-            </li>
-          </ul>
-        </div>
       </div>
-    </nav>
-    <div class="container">
-      <div class="row mt-5 text-center">
-        <h2>요미냥 코스프레 모음</h2>
+      <div class="col-sm-12 my-3 mb-1 mb-md-0">
+        <button type="button" class="gal-img-btn rounded-5" data-bs-toggle="modal" data-bs-target="#modal2">
+          <img src="https://pbs.twimg.com/media/FY13t5haAAIomJM?format=jpg&name=large"
+            class="img-fluid img-resize rounded-5" id="basic-img" alt="Image 2" data-toggle="modal"
+            data-target="#modal2" />
+          <div class="hover-box rounded-5">
+            <h3>요이미야(Yoimiya)</h3>
+          </div>
+        </button>
       </div>
-      <div class="row row-cols-md-3 fadeIn" id="gallery">
-        <div class="col-sm-12 my-3 mb-1 mb-md-0">
-          <button
-            type="button"
-            class="gal-img-btn rounded-5"
-            data-bs-toggle="modal"
-            data-bs-target="#modal1"
-          >
-            <img
-              src="https://pbs.twimg.com/media/FWEFOhuaUAArEnY?format=jpg&name=large"
-              class="img-fluid img-resize rounded-5"
-              id="basic-img"
-              alt="Image 1"
-              data-toggle="modal"
-              data-target="#modal1"
-            />
-            <div class="hover-box rounded-5">
-              <h3>샤이 릴리(Shylily)</h3>
-            </div>
-          </button>
-        </div>
-        <div class="col-sm-12 my-3 mb-1 mb-md-0">
-          <button
-            type="button"
-            class="gal-img-btn rounded-5"
-            data-bs-toggle="modal"
-            data-bs-target="#modal2"
-          >
-            <img
-              src="https://pbs.twimg.com/media/FY13t5haAAIomJM?format=jpg&name=large"
-              class="img-fluid img-resize rounded-5"
-              id="basic-img"
-              alt="Image 2"
-              data-toggle="modal"
-              data-target="#modal2"
-            />
-            <div class="hover-box rounded-5">
-              <h3>요이미야(Yoimiya)</h3>
-            </div>
-          </button>
-        </div>
-        <div class="col-sm-12 my-3 mb-1 mb-md-0">
-          <button
-            type="button"
-            class="gal-img-btn rounded-5"
-            data-bs-toggle="modal"
-            data-bs-target="#modal3"
-          >
-            <img
-              src="https://pbs.twimg.com/media/F1hnVexaIAIla-R?format=jpg&name=large"
-              class="img-fluid img-resize rounded-5"
-              id="basic-img"
-              alt="Image 3"
-              data-toggle="modal"
-              data-target="#modal3"
-            />
-            <div class="hover-box rounded-5">
-              <h3>닐루(Nilou)</h3>
-            </div>
-          </button>
-        </div>
-        <div class="col-sm-12 my-3 mb-1 mb-md-0">
-          <button
-            type="button"
-            class="gal-img-btn rounded-5"
-            data-bs-toggle="modal"
-            data-bs-target="#modal4"
-          >
-            <img
-              src="images/yomi_ganyu.jpg"
-              class="img-fluid img-resize rounded-5"
-              id="basic-img"
-              alt="Image 4"
-              data-toggle="modal"
-              data-target="#modal4"
-            />
-            <div class="hover-box rounded-5">
-              <h3>감우(Ganyu)</h3>
-            </div>
-          </button>
-        </div>
-        <div class="col-sm-12 my-3 mb-1 mb-md-0">
-          <button
-            type="button"
-            class="gal-img-btn rounded-5"
-            data-bs-toggle="modal"
-            data-bs-target="#modal5"
-          >
-            <img
-              src="https://pbs.twimg.com/media/FMr_efRaAAEoww8?format=jpg&name=4096x4096"
-              class="img-fluid img-resize rounded-5"
-              id="basic-img"
-              alt="Image 5"
-              data-toggle="modal"
-              data-target="#modal5"
-            />
-            <div class="hover-box rounded-5">
-              <h3>키타가와 마린(Marin Kitagawa)</h3>
-            </div>
-          </button>
-        </div>
-        <div class="col-sm-12 my-3 mb-1 mb-md-0">
-          <button
-            type="button"
-            class="gal-img-btn rounded-5"
-            data-bs-toggle="modal"
-            data-bs-target="#modal6"
-          >
-            <img
-              src="https://pbs.twimg.com/media/FZXUsRFaAAA7Y3a?format=jpg&name=large"
-              class="img-fluid img-resize rounded-5"
-              id="basic-img"
-              alt="Image 6"
-              data-toggle="modal"
-              data-target="#modal6"
-            />
-            <div class="hover-box rounded-5">
-              <h3>기타</h3>
-            </div>
-          </button>
-        </div>
+      <div class="col-sm-12 my-3 mb-1 mb-md-0">
+        <button type="button" class="gal-img-btn rounded-5" data-bs-toggle="modal" data-bs-target="#modal3">
+          <img src="https://pbs.twimg.com/media/F1hnVexaIAIla-R?format=jpg&name=large"
+            class="img-fluid img-resize rounded-5" id="basic-img" alt="Image 3" data-toggle="modal"
+            data-target="#modal3" />
+          <div class="hover-box rounded-5">
+            <h3>닐루(Nilou)</h3>
+          </div>
+        </button>
       </div>
-      <!-- Each Gallery Modal -->
-      <div
-        class="modal fade"
-        id="modal1"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel">
-                샤이 릴리 By 요미냥(Yomicos) <br /><a
-                  href="https://twitter.com/yomicoskr/status/1541408911869108224/photo/1"
-                  >원본 링크</a
-                >
-              </h3>
-              <button
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#modal1"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="row row-cols-md-3 gy-5">
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FWQvOr2aIAIAH_d?format=jpg&name=large"
-                    class="img-fluid"
-                    alt="Image 1-1"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FWQvOr3aUAAcHSg?format=jpg&name=large"
-                    class="img-fluid"
-                    alt="Image 1-2"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FVmdbihakAAJdpW?format=jpg&name=900x900"
-                    class="img-fluid"
-                    alt="Image 1-3"
-                  />
-                </div>
-              </div>
-              <!--<div class="carousel">
-                  <div class="row row-cols-md-2 mt-3 gy-5">
-                    <div class="col-sm-12">
-                      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">shylily cosplay bustin!<a href="https://twitter.com/hashtag/shylily?src=hash&amp;ref_src=twsrc%5Etfw">#shylily</a> <a href="https://twitter.com/hashtag/cosplay?src=hash&amp;ref_src=twsrc%5Etfw">#cosplay</a> <a href="https://twitter.com/hashtag/%E3%82%B3%E3%82%B9%E3%83%97%E3%83%AC?src=hash&amp;ref_src=twsrc%5Etfw">#コスプレ</a> <a href="https://t.co/MfdHhOmraD">pic.twitter.com/MfdHhOmraD</a></p>&mdash; 요미(Yomi/ヨミ) (@yomicoskr) <a href="https://twitter.com/yomicoskr/status/1539149575591563264?ref_src=twsrc%5Etfw">June 21, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class="col-sm-12 my-3 mb-1 mb-md-0">
+        <button type="button" class="gal-img-btn rounded-5" data-bs-toggle="modal" data-bs-target="#modal4">
+          <img src="images/yomi_ganyu.jpg" class="img-fluid img-resize rounded-5" id="basic-img" alt="Image 4"
+            data-toggle="modal" data-target="#modal4" />
+          <div class="hover-box rounded-5">
+            <h3>감우(Ganyu)</h3>
+          </div>
+        </button>
+      </div>
+      <div class="col-sm-12 my-3 mb-1 mb-md-0">
+        <button type="button" class="gal-img-btn rounded-5" data-bs-toggle="modal" data-bs-target="#modal5">
+          <img src="https://pbs.twimg.com/media/FMr_efRaAAEoww8?format=jpg&name=4096x4096"
+            class="img-fluid img-resize rounded-5" id="basic-img" alt="Image 5" data-toggle="modal"
+            data-target="#modal5" />
+          <div class="hover-box rounded-5">
+            <h3>키타가와 마린(Marin Kitagawa)</h3>
+          </div>
+        </button>
+      </div>
+      <div class="col-sm-12 my-3 mb-1 mb-md-0">
+        <button type="button" class="gal-img-btn rounded-5" data-bs-toggle="modal" data-bs-target="#modal6">
+          <img src="https://pbs.twimg.com/media/FZXUsRFaAAA7Y3a?format=jpg&name=large"
+            class="img-fluid img-resize rounded-5" id="basic-img" alt="Image 6" data-toggle="modal"
+            data-target="#modal6" />
+          <div class="hover-box rounded-5">
+            <h3>기타</h3>
+          </div>
+        </button>
+      </div>
+    </div>
+    <!-- Each Gallery Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">
+              샤이 릴리 (ShyLily)
+            </h3>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal1">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-md-7">
+                <div class="carousel slide carousel-fade modalCarousels" id="modalCarousel1" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_shylily.jpg" class="w-100" alt="..." />
+                      </div>
                     </div>
-                    <div class="col-sm-12">
-                      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">best of tail <a href="https://twitter.com/hashtag/%E3%82%B3%E3%82%B9%E3%83%97%E3%83%AC?src=hash&amp;ref_src=twsrc%5Etfw">#コスプレ</a> <a href="https://twitter.com/hashtag/Cosplay?src=hash&amp;ref_src=twsrc%5Etfw">#Cosplay</a> <a href="https://twitter.com/hashtag/shylily?src=hash&amp;ref_src=twsrc%5Etfw">#shylily</a> <a href="https://t.co/CzZuBjXe76">pic.twitter.com/CzZuBjXe76</a></p>&mdash; 요미(Yomi/ヨミ) (@yomicoskr) <a href="https://twitter.com/yomicoskr/status/1539607935826792448?ref_src=twsrc%5Etfw">June 22, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_shylily2.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_shylily3.jpg" class="w-100" alt="..." />
+                      </div>
                     </div>
                   </div>
-                </div>-->
-              <div
-                class="carousel slide fadeIn"
-                id="carouselExampleIndicators"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div
-                      class="d-flex align-items-center justify-content-center"
-                    >
-                      <img
-                        src="images/yomi2.jpg"
-                        class="w-50 img-fluid"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="carousel-caption d-block carousel-cap">
-                      <a href="about.html">
-                        <h4 class="txt-bg rounded-5">요미냥 프로필</h4>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div
-                      class="d-flex align-items-center justify-content-center"
-                    >
-                      <img src="images/yomi_ganyu.jpg" class="w-50" alt="..." />
-                    </div>
-                    <div class="carousel-caption d-block carousel-cap">
-                      <a href="gallery.html">
-                        <h4 class="txt-bg rounded-5">요미냥 갤러리</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal fade"
-        id="modal2"
-        tabindex="-2"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel">
-                요이미야 - 원신(Genshin) By 요미냥(Yomicos)<br /><a
-                  href="https://twitter.com/yomicoskr/status/1553029091582181376/photo/1"
-                  >원본 링크</a
-                >
-              </h3>
-              <button
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#modal2"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="row row-cols-md-3 gy-5">
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FY13t5hakAAVVD7?format=jpg&name=large"
-                    class="img-fluid"
-                    alt="Image 2-1"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FY13t5gaIAAEdmz?format=jpg&name=large"
-                    class="img-fluid"
-                    alt="Image 2-2"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FY13t5daMAA06Pr?format=jpg&name=large"
-                    class="img-fluid"
-                    alt="Image 2-3"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FZPyL5qacAAOJPC?format=jpg&name=large"
-                    class="img-fluid"
-                    alt="Image 2-4"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FY0tO67aUAAuwhV?format=jpg&name=large"
-                    class="w-100 h-100 img-resize"
-                    alt="Image 2-5"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FZEVVU4acAArhdU?format=jpg&name=large"
-                    class="w-100 h-100 img-resize"
-                    alt="Image 2-6"
-                  />
+                  <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal fade"
-        id="modal3"
-        tabindex="-3"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel">
-                닐루 - 원신(Genshin) By 요미냥(Yomicos)<br /><a
-                  href="https://twitter.com/tei2dova/status/1682293973195563009/photo/1"
-                  >원본 링크</a
-                >
-              </h3>
-              <button
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#modal3"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="row row-cols-md-3 gy-5">
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/F1hnVevaQAI8gMD?format=jpg&name=large"
-                    class="img-fluid"
-                    alt="Image 3-1"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="images/yomi_nilou3.jpg"
-                    class="img-fluid"
-                    alt="Image 3-2"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="images/yomi_nilou4.jpg"
-                    class="img-fluid"
-                    alt="Image 3-3"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="images/yomi_nilou5.jpg"
-                    class="img-fluid"
-                    alt="Image 3-4"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="images/yomi_nilou8.jpg"
-                    class="img-fluid"
-                    alt="Image 3-5"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="images/yomi_nilou7.jpg"
-                    class="img-fluid"
-                    alt="Image 3-6"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal fade"
-        id="modal4"
-        tabindex="-4"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel">
-                감우 - 원신(Genshin) By 요미냥(Yomicos) <br /><a
-                  href="https://twitter.com/anfrha__/status/1593756175190745088/photo/1"
-                  >원본 링크</a
-                >
-              </h3>
-              <button
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#modal4"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="row row-cols-md-3 gy-5">
-                <div class="col-sm-12">
-                  <img
-                    src="images/yomi_ganyu2.jpg"
-                    class="w-100 h-100 img-resize"
-                    alt="Image 4-1"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="images/yomi_ganyu3.jpg"
-                    class="w-100 h-100 img-resize"
-                    alt="Image 4-2"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="images/yomi_ganyu4.jpg"
-                    class="w-100 h-100 img-resize"
-                    alt="Image 4-3"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/Fh0EvKFVEAAEjxd?format=jpg&name=large"
-                    class="w-100 h-100 img-resize"
-                    alt="Image 4-4"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="images/yomi_ganyu8.jpg"
-                    class="w-100 h-100 img-resize"
-                    alt="Image 4-5"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="images/yomi_ganyu9.jpg"
-                    class="w-100 h-100 img-resize"
-                    alt="Image 4-6"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal fade"
-        id="modal5"
-        tabindex="-5"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel">
-                키타가와 마린 - 그 비스크 돌은 사랑을 한다 By 요미냥(Yomicos)<br /><a
-                  href="https://twitter.com/yomicoskr/status/1498291217758822400/photo/1"
-                  >원본 사진 링크</a
-                >
-              </h3>
-              <button
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#modal5"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="row row-cols-md-3 gy-5">
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FMr_dv2akAYYFsj?format=jpg&name=4096x4096"
-                    class="w-100 h-100 img-resize"
-                    alt="Image 5-1"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FMr_efRaAAEoww8?format=jpg&name=4096x4096"
-                    class="w-100 h-100 img-resize"
-                    alt="Image 5-2"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FMr_gTkacAQsvaa?format=jpg&name=4096x4096"
-                    class="w-100 h-100 img-resize"
-                    alt="Image 5-3"
-                  />
-                </div>
-              </div>
-              <div class="row row-cols-md-2 mt-5">
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FMrh-vraIAU6tj7?format=jpg&name=large"
-                    class="w-100 h-100 img-resize"
-                    alt="Image 5-4"
-                  />
-                </div>
-                <div class="col-sm-12">
-                  <img
-                    src="https://pbs.twimg.com/media/FMqEY2LaUAAa2_X?format=jpg&name=large"
-                    class="w-100 h-100 img-resize"
-                    alt="Image 5-5"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="modal fade"
-        id="modal6"
-        tabindex="-6"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel">
-                디바(D.Va) - 오버워치(Overwatch) By 요미냥(Yomicos)<br /><a
-                  href="https://twitter.com/Hinge_Oh/status/1556281634500280320/photo/1"
-                  >원본 사진 링크</a
-                ><br /><a
-                  href="https://twitter.com/Hinge_Oh/status/1556283431063265280/photo/1"
-                  >원본 사진 링크 2</a
-                >
-              </h3>
-              <button
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#modal6"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="row row-cols-md-3 gy-5">
-                <div class="col-sm-12">
-                  <img src="" class="w-100 h-100 img-resize" alt="Image 6-1" />
-                </div>
-                <div class="col-sm-12">
-                  <img src="" class="w-100 h-100 img-resize" alt="Image 6-2" />
-                </div>
-                <div class="col-sm-12">
-                  <img src="" class="w-100 h-100 img-resize" alt="Image 6-3" />
-                </div>
-                <div class="col-sm-12">
-                  <img src="" class="w-100 h-100 img-resize" alt="Image 6-4" />
-                </div>
-                <div class="col-sm-12">
-                  <img src="" class="w-100 h-100 img-resize" alt="Image 6-5" />
-                </div>
-                <div class="col-sm-12">
-                  <img src="" class="w-100 h-100 img-resize" alt="Image 6-6" />
-                </div>
+              <div class="col-sm-12 col-md-4 text-center">
+                <img
+                  src="https://i.namu.wiki/i/gr9neEcG-wOckfYokJbjyhcim4q7zwn46tqmELbrLsAdk7EwpB5LxDkqI6y7aeC7nq-sdjnsMzxMSbfINYXL7Sl3gA7INmFiAVcFIPoT3uxn9NUYAZVDjAy97XO8D_fDqUzp1NfbEW76hz_Jhi-QIw.webp"
+                  width="400" height="530" alt="">
+                <h3 class="modal-title text-start pt-5"><a
+                    href="https://twitter.com/yomicoskr/status/1541408911869108224/photo/1">See original page</a></h3>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="modal fade" id="modal2" tabindex="-2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">
+              요이미야 - 원신(Genshin) By 요미냥(Yomicos)
+            </h3>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal2">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-md-7">
+                <div class="carousel slide carousel-fade modalCarousels" id="modalCarousel2" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_miya.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_miya2.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_miya3.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_miya4.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_miya5.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_miya6.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <img class="pt-5" src="images/miya.jpg" width="430" height="350" alt="">
+                <h3 class="modal-title text-start pt-5"><a
+                    href="https://twitter.com/yomicoskr/status/1553029091582181376/photo/1">See original page</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal3" tabindex="-3" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">
+              닐루 - 원신(Genshin) By 요미냥(Yomicos)<br /><a
+                href="https://twitter.com/tei2dova/status/1682293973195563009/photo/1">원본 링크</a>
+            </h3>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal3">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-md-7">
+                <div class="carousel slide carousel-fade modalCarousels" id="modalCarousel3" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_nilou2.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_nilou3.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_nilou4.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_nilou5.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_nilou6.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_nilou7.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_nilou8.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 text-center">
+                <img src="images/nilou.jpg" width="330" height="530" alt="">
+                <h3 class="modal-title text-start pt-5"><a
+                    href="https://twitter.com/yomicoskr/status/1553029091582181376/photo/1">See original page</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal4" tabindex="-4" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">
+              감우 - 원신(Genshin) By 요미냥(Yomicos)
+            </h3>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal4">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12 col-md-7">
+                <div class="carousel slide carousel-fade modalCarousels" id="modalCarousel4" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_ganyu2.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_ganyu3.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_ganyu4.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_ganyu5.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_ganyu6.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_ganyu7.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_ganyu8.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_ganyu9.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_ganyu10.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img src="images/yomi_ganyu11.jpg" class="w-100" alt="..." />
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel4"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel4"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 text-center">
+                <img src="images/ganyu.jpg" width="350" height="430" alt="">
+                <h3 class="modal-title text-start pt-5"><a
+                    href="https://twitter.com/yomicoskr/status/1593823335514660864/photo/1">See original page</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal5" tabindex="-5" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">
+              키타가와 마린 - 그 비스크 돌은 사랑을 한다 By 요미냥(Yomicos)<br /><a
+                href="https://twitter.com/yomicoskr/status/1498291217758822400/photo/1">원본 사진 링크</a>
+            </h3>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal5">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row row-cols-md-3 gy-5">
+              <div class="col-sm-12">
+                <img src="https://pbs.twimg.com/media/FMr_dv2akAYYFsj?format=jpg&name=4096x4096"
+                  class="w-100 h-100 img-resize" alt="Image 5-1" />
+              </div>
+              <div class="col-sm-12">
+                <img src="https://pbs.twimg.com/media/FMr_efRaAAEoww8?format=jpg&name=4096x4096"
+                  class="w-100 h-100 img-resize" alt="Image 5-2" />
+              </div>
+              <div class="col-sm-12">
+                <img src="https://pbs.twimg.com/media/FMr_gTkacAQsvaa?format=jpg&name=4096x4096"
+                  class="w-100 h-100 img-resize" alt="Image 5-3" />
+              </div>
+            </div>
+            <div class="row row-cols-md-2 mt-5">
+              <div class="col-sm-12">
+                <img src="https://pbs.twimg.com/media/FMrh-vraIAU6tj7?format=jpg&name=large"
+                  class="w-100 h-100 img-resize" alt="Image 5-4" />
+              </div>
+              <div class="col-sm-12">
+                <img src="https://pbs.twimg.com/media/FMqEY2LaUAAa2_X?format=jpg&name=large"
+                  class="w-100 h-100 img-resize" alt="Image 5-5" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal6" tabindex="-6" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">
+              디바(D.Va) - 오버워치(Overwatch) By 요미냥(Yomicos)<br /><a
+                href="https://twitter.com/Hinge_Oh/status/1556281634500280320/photo/1">원본 사진 링크</a><br /><a
+                href="https://twitter.com/Hinge_Oh/status/1556283431063265280/photo/1">원본 사진 링크 2</a>
+            </h3>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal6">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row row-cols-md-3 gy-5">
+              <div class="col-sm-12">
+                <img src="" class="w-100 h-100 img-resize" alt="Image 6-1" />
+              </div>
+              <div class="col-sm-12">
+                <img src="" class="w-100 h-100 img-resize" alt="Image 6-2" />
+              </div>
+              <div class="col-sm-12">
+                <img src="" class="w-100 h-100 img-resize" alt="Image 6-3" />
+              </div>
+              <div class="col-sm-12">
+                <img src="" class="w-100 h-100 img-resize" alt="Image 6-4" />
+              </div>
+              <div class="col-sm-12">
+                <img src="" class="w-100 h-100 img-resize" alt="Image 6-5" />
+              </div>
+              <div class="col-sm-12">
+                <img src="" class="w-100 h-100 img-resize" alt="Image 6-6" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

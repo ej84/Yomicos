@@ -55,6 +55,26 @@ p {
 }
 
 @media (min-width: 992px) {
+  .modalCarousels {
+    width: 80%;
+    right: 0%;
+    /* Prev button */
+    /* Next button */
+  }
+  .modalCarousels .carousel-control-prev,
+  .modalCarousels .carousel-control-next {
+    width: 10%;
+    height: 20%;
+    background-color: #ff1493;
+  }
+  .modalCarousels .carousel-control-prev {
+    left: 0;
+    /* Carousel 왼쪽 바깥으로 조정 */
+  }
+  .modalCarousels .carousel-control-next {
+    right: 0;
+    /* Carousel 오른쪽 바깥으로 조정 */
+  }
   #carouselExampleIndicators {
     width: 55%;
     margin: auto;
@@ -67,11 +87,21 @@ p {
   }
   /* Prev button */
   .carousel-control-prev {
-    left: 262px; /* Carousel 왼쪽 바깥으로 조정 */
+    left: 209px;
+    /* Carousel 왼쪽 바깥으로 조정 */
   }
   /* Next button */
   .carousel-control-next {
-    right: 262px; /* Carousel 오른쪽 바깥으로 조정 */
+    right: 209px;
+    /* Carousel 오른쪽 바깥으로 조정 */
+  }
+}
+@media (min-width: 1550px) {
+  .carousel-control-prev {
+    left: 262px;
+  }
+  .carousel-control-next {
+    right: 262px;
   }
 }
 .carousel-cap {
@@ -174,7 +204,8 @@ p {
 @keyframes rise {
   to {
     bottom: 100%;
-    opacity: 0; /* Disappearing smoothly */
+    opacity: 0;
+    /* Disappearing smoothly */
   }
 }
 /* Responsive Media Queries */
