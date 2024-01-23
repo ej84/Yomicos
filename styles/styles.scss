@@ -77,7 +77,6 @@ p {
       right: 0;
       /* Carousel 오른쪽 바깥으로 조정 */
     }
-
   }
 
   #carouselExampleIndicators {
@@ -103,6 +102,10 @@ p {
     right: 209px;
     /* Carousel 오른쪽 바깥으로 조정 */
   }
+}
+
+.modal-body {
+  background-color: #f2c76e;
 }
 
 @media (min-width: 1550px) {
@@ -178,6 +181,9 @@ p {
 #footer {
   margin-top: auto;
   background-color: var(--tangopink);
+  h5 {
+    color: #fff;
+  }
 }
 
 #bubbles {
@@ -205,6 +211,13 @@ p {
   animation-fill-mode: forwards;
 }
 
+.banner {
+  &:hover {
+    animation: jump-shaking 0.83s;
+    animation-iteration-count: 1;
+  }
+}
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -220,6 +233,30 @@ p {
     bottom: 100%;
     opacity: 0;
     /* Disappearing smoothly */
+  }
+}
+
+@keyframes jump-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateY(-7px);
+  }
+  35% {
+    transform: translateY(-7px) rotate(17deg);
+  }
+  55% {
+    transform: translateY(-7px) rotate(-17deg);
+  }
+  65% {
+    transform: translateY(-7px) rotate(17deg);
+  }
+  75% {
+    transform: translateY(-7px) rotate(-17deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
   }
 }
 
