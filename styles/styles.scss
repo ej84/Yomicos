@@ -79,6 +79,30 @@ p {
     }
   }
 
+  .lastCarousel {
+    width: 80%;
+    left: 45%;
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 10%;
+      height: 20%;
+      background-color: #ff1493;
+    }
+
+    /* Prev button */
+    .carousel-control-prev {
+      left: 0;
+      /* Carousel 왼쪽 바깥으로 조정 */
+    }
+
+    /* Next button */
+    .carousel-control-next {
+      right: 0;
+      /* Carousel 오른쪽 바깥으로 조정 */
+    }
+  }
+
   #carouselExampleIndicators {
     width: 55%;
     margin: auto;
@@ -116,6 +140,13 @@ p {
   .carousel-control-next {
     right: 262px;
   }
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .carousel-cap {
@@ -181,6 +212,7 @@ p {
 #footer {
   margin-top: auto;
   background-color: var(--tangopink);
+
   h5 {
     color: #fff;
   }
@@ -240,21 +272,27 @@ p {
   0% {
     transform: translateX(0);
   }
+
   25% {
     transform: translateY(-7px);
   }
+
   35% {
     transform: translateY(-7px) rotate(17deg);
   }
+
   55% {
     transform: translateY(-7px) rotate(-17deg);
   }
+
   65% {
     transform: translateY(-7px) rotate(17deg);
   }
+
   75% {
     transform: translateY(-7px) rotate(-17deg);
   }
+
   100% {
     transform: translateY(0) rotate(0);
   }
