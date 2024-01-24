@@ -36,6 +36,13 @@ body a {
   text-decoration: none !important;
 }
 
+.a {
+  color: var(--brightlavender) !important;
+}
+.a:hover {
+  color: var(--tangopink) !important;
+}
+
 h1,
 h2,
 h3,
@@ -45,6 +52,17 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   color: var(--brightlavender);
+}
+
+.bg {
+  background-color: ivory;
+  outline-style: solid;
+  outline-width: 10px;
+  outline-color: var(--tangopink);
+}
+
+.bg2 {
+  background-color: ivory;
 }
 
 .carousel-control-prev,
